@@ -123,9 +123,9 @@ async function loadJsonToBigQuery() {
   });
 }
 
-cron.schedule("*/10 0 0 * * *", function () {
-  console.log(
-    "========================Cron Job==============================="
-  );
+// cron.schedule("*/10 0 0 * * *", function () {
+//   console.log(
+//     "========================Cron Job==============================="
+//   );
   loadJsonToBigQuery();
 });
